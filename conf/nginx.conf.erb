@@ -37,6 +37,11 @@ http {
       alias /app/public/;
     }
 
+    location /blog {
+      alias /app/public/index.html
+    }
+
+
     location / {
       expires 10s;
     }
