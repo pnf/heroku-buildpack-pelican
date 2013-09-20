@@ -1,7 +1,6 @@
 #!/bin/sh
 
 echo "This is the pnf version 2"
-"
 
 if [ -f $1/pelicanconf.py ]; then
   echo "Pelican"
