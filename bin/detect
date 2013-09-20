@@ -1,6 +1,6 @@
 #!/bin/sh
 
-echo "This is the pnf version Fri Sep 20 17:37:08 EDT 2013
+echo "This is the pnf version 2"
 "
 
 if [ -f $1/pelicanconf.py ]; then
