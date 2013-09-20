@@ -33,7 +33,8 @@ http {
     server_name <%= require 'uri'; URI.parse(ENV["PELICAN_SITEURL"]).host %>;
   <% end %>
 
-    rewrite ^/blog/(.*) /$1 last;
+    location /blog/ {
+      alias /app/public/;
 
     location / {
       expires 10s;
