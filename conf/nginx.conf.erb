@@ -35,10 +35,6 @@ http {
 
     rewrite ^/blog/(.*) /$1 last;
 
-    location /blog/ {
-        rewrite ^/blog/(.*) /$1 break;
-    }
-
     location / {
       expires 10s;
     }
