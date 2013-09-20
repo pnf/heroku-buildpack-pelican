@@ -33,6 +33,12 @@ http {
     location / {
       expires 10s;
     }
+
+    location /blog/ {
+      alias ;
+    }
+       
+
   }
 }
 
