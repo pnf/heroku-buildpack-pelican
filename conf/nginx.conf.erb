@@ -31,7 +31,7 @@ http {
   <% end %>
 
     location /blog/ {
-      alias /;
+      rewrite /blog/(.*) /$1 last;
     }
        
     location / {
