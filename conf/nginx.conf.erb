@@ -30,14 +30,14 @@ http {
     server_name <%= require 'uri'; URI.parse(ENV["PELICAN_SITEURL"]).host %>;
   <% end %>
 
-    location / {
-      expires 10s;
-    }
-
     location /blog/ {
       alias /;
     }
        
+    location / {
+      expires 10s;
+    }
+
 
   }
 }
